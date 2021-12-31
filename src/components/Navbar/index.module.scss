@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.nav {
+  background: $clr-primary-1;
+  padding: 5px 0px;
+
+  .nav__center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.75rem;
+    padding: 5px 0;
+    width: 100%;
+    align-items: center;
+  }
+}

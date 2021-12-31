@@ -1,0 +1,96 @@
+@import "../../styles/variables";
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    column-gap: 0.75rem;
+    margin: 2rem 0;
+  }
+
+  .detail__figure {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      border-radius: 4px;
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+
+    .figure__description {
+      h2 {
+        font-size: 1.75rem;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 0.85rem;
+        margin-top: 25px;
+        color: $clr-grey;
+
+        button {
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+          color: $btn-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .detail__summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+
+    .summary__status {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    .summary__title {
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .summary__price {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .summary__button {
+      width: 100%;
+
+      button {
+        background-image: none;
+        background-color: $btn-color;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        border: 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        color: #fff;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+      }
+    }
+  }
+}

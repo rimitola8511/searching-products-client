@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+
+  li {
+    font-size: 14px;
+
+    & + li::before {
+      padding: 8px;
+      color: $clr-grey;
+      content: "\003E";
+    }
+
+    a {
+      color: $clr-grey;
+    }
+
+    span {
+      color: $clr-grey;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      span {
+        cursor: not-allowed;
+        font-weight: bold;
+      }
+    }
+  }
+}
